@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">CustomerView</string>
+
+    <!-- start XRefreshView-->
+    <string name="xrefreshview_header_hint_normal">下拉刷新</string>
+    <string name="xrefreshview_header_hint_ready">松开刷新数据</string>
+    <string name="xrefreshview_header_hint_refreshing">正在刷新...</string>
+    <string name="xrefreshview_header_hint_loading">正在加载...</string>
+    <string name="xrefreshview_header_hint_loaded">加载完成</string>
+    <string name="xrefreshview_header_hint_loaded_fail">加载失败</string>
+    <string name="xrefreshview_header_last_time">上次更新时间：</string>
+    <string name="xrefreshview_footer_hint_normal">加载完成</string>
+    <string name="xrefreshview_footer_hint_fail">加载失败，请重试</string>
+    <string name="xrefreshview_footer_hint_complete">已无更多数据</string>
+    <string name="xrefreshview_footer_hint_click">点击加载更多</string>
+    <string name="xrefreshview_footer_hint_release">松开加载更多</string>
+    <string name="xrefreshview_footer_hint_ready">松开载入更多</string>
+    <string name="xrefreshview_never_refresh">从未刷新</string>
+    <string name="xrefreshview_refresh_justnow">刚刚刷新</string>
+    <string name="xrefreshview_refresh_minutes_ago">%1s分钟之前刷新</string>
+    <string name="xrefreshview_refresh_hours_ago">%1s小时之前刷新</string>
+    <string name="xrefreshview_refresh_days_ago">%1s天之前刷新</string>
+    <!-- end XRefreshView-->
+
+    <!--分享-->
+    <string name="share_text">分享到</string>
+    <string name="share_title_text">分享给好友</string>
+    <string name="wx_text">微信</string>
+    <string name="qq_text">QQ</string>
+    <string name="wx_friend_text">微信好友</string>
+    <string name="friend_circle_text">朋友圈</string>
+    <string name="qq_friend_text">QQ好友</string>
+    <string name="qq_zone_text">QQ空间</string>
+    <string name="sina_weibo_text">新浪微博</string>
+    <string name="copy_link_text">复制链接</string>
+    <string name="report_text">举报</string>
+</resources>

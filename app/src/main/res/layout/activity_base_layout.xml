@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bear.customerview.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.bear.customerview.autolayout.AutoRelativeLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_app_title_height"
+        android:background="@color/colorAccent">
+
+        <com.bear.customerview.autolayout.AutoRelativeLayout
+            android:id="@+id/base_back_layout"
+            android:layout_width="170px"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/margin_space">
+
+            <ImageButton
+                android:layout_width="34px"
+                android:layout_height="58px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_back_normal" />
+        </com.bear.customerview.autolayout.AutoRelativeLayout>
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="标题"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/title_text_size" />
+
+        <Button
+            android:id="@+id/tool_bar_right_btn"
+            android:layout_width="200px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5px"
+            android:background="@null"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/normal_big_text_size"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/tool_bar_right_img"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_space"
+            android:background="@null"
+            android:visibility="gone" />
+    </com.bear.customerview.autolayout.AutoRelativeLayout>
+    <com.bear.customerview.autolayout.AutoRelativeLayout
+        android:id="@+id/base_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.bear.customerview.autolayout.AutoRelativeLayout>
+</com.bear.customerview.autolayout.AutoLinearLayout>

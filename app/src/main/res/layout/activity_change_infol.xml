@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bear.customerview.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/app_backgroud_color">
+    <com.bear.customerview.autolayout.AutoLinearLayout
+        android:id="@+id/change_avator_layout"
+        style="@style/AccountDetailItemStyle"
+        android:orientation="vertical">
+        <com.bear.customerview.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_item_height"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/normal_left_margin"
+            android:paddingRight="@dimen/normal_right_margin">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:text="@string/change_avator_text"
+                android:textColor="@color/gray_text_color"
+                android:textSize="48px"
+                android:layout_centerVertical="true"/>
+            <ImageView
+                android:id="@+id/change_avator_image"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:src="@drawable/default_head_portrait"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </com.bear.customerview.autolayout.AutoRelativeLayout>
+    </com.bear.customerview.autolayout.AutoLinearLayout>
+    <View
+        style="@style/line_style"/>
+    <com.trade.widget.ArrowRowView
+        android:id="@+id/change_name_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_item_height"
+        android:onClick="itemClick"
+        app:titleText = "@string/change_nick_name"
+        app:titleTextSize = "14px"
+        app:titleTextColor = "@color/normal_text_color"
+        app:subTitleText = "Wolf独行"
+        app:subTextSize = "14px"
+        app:subTextColor= "@color/normal_back_text_color"></com.trade.widget.ArrowRowView>
+
+</com.bear.customerview.autolayout.AutoLinearLayout>

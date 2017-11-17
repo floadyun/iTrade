@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:fab="http://schemas.android.com/apk/res-auto">
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/xauusd_floating_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_title="@string/xauusd_text" />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/eurusd_floating_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_title="@string/eurusd_text"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/gbpusd_floating_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_title="@string/gpbusd_text"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/audusd_floating_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_title="@string/audusd_text"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/usdcad_floating_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_title="@string/usdcad_text"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/usdjpy_floating_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_title="@string/usdjpy_text"/>
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+</RelativeLayout>

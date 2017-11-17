@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customerview/customerview.iml" filepath="$PROJECT_DIR$/customerview/customerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iTrade.iml" filepath="$PROJECT_DIR$/iTrade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/medialib/medialib.iml" filepath="$PROJECT_DIR$/medialib/medialib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/umenglib/umenglib.iml" filepath="$PROJECT_DIR$/umenglib/umenglib.iml" />
+    </modules>
+  </component>
+</project>

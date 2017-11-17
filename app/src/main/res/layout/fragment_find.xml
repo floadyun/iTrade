@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bear.customerview.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_title_height"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:background="@color/colorAccent">
+            <com.bear.customerview.widget.PagerSlidingTabStrip
+                android:id="@+id/home_tabs"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:pstsIndicatorHeight="@dimen/height_dp_3"
+                app:pstsIndicatorColor="@color/white_color"
+                app:pstsDividerColor="@android:color/transparent"
+                app:selectedTabTextColor="@color/white_color"
+                app:pstsUnderlineHeight="0dp" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!--PagerSlidingTabStrip必须放在LinearLayout,RelativeLayout点击无效-->
+</com.bear.customerview.autolayout.AutoLinearLayout>

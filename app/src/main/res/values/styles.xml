@@ -1,0 +1,89 @@
+<resources>
+    <style name="app_theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- toolbar（actionbar）颜色 -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- 状态栏颜色 -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowTitleSize">@dimen/title_text_size</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/app_backgroud_color</item>
+        <!-- 设置activity切换动画 -->
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+    </style>
+    <!-- animation 样式 -->
+    <style name="activityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_to_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_right_to_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_to_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_left_to_right</item>
+    </style>
+    <!--底部弹框-->
+    <style name="BottomDialog" parent="@style/app_theme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/bottom_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_anim_out</item>
+    </style>
+    <style name="line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/normal_line_height</item>
+        <item name="android:background">@color/line_view_color</item>
+    </style>
+   <style name="app_title_layout_style">
+       <item name="android:layout_width">match_parent</item>
+       <item name="android:layout_height">@dimen/app_title_height</item>
+       <item name="android:paddingLeft">@dimen/app_marign_space</item>
+       <item name="android:paddingRight">@dimen/app_marign_space</item>
+       <item name="android:background">@color/colorAccent</item>
+   </style>
+   <style name="title_bar_text_style">
+       <item name="android:layout_width">wrap_content</item>
+       <item name="android:layout_height">wrap_content</item>
+       <item name="android:textColor">@color/white_color</item>
+       <item name="android:textSize">@dimen/title_text_size</item>
+   </style>
+    <!--普通文字-->
+    <style name="normal_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/edit_hint_text_color</item>
+        <item name="android:textSize">@dimen/normal_small_text_size</item>
+    </style>
+    <style name="normal_black_text_style" parent="normal_text_style">
+        <item name="android:textColor">@color/back_color</item>
+    </style>
+    <style name="small_text_style" parent="normal_text_style">
+        <item name="android:textSize">@dimen/small_text_size</item>
+    </style>
+    <style name="single_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height_dp_1</item>
+        <item name="android:background">@color/button_bg_gray</item>
+    </style>
+    <!--普通输入框-->
+    <style name="nomrmal_edit_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColorHint">@color/edit_hint_text_color</item>
+        <item name="android:textColor">@color/normal_text_color</item>
+        <item name="android:textSize">@dimen/normal_small_text_size</item>
+    </style>
+    <!-- 账户中心每行样式-->
+    <style name="AccountDetailItemStyle">
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">itemClick</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/setting_item_height</item>
+        <item name="android:paddingLeft">@dimen/margin_space</item>
+        <item name="android:paddingRight">@dimen/margin_space</item>
+        <item name="android:background">@drawable/view_bg_clickable_selector</item>
+    </style>
+</resources>

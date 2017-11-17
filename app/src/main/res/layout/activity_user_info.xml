@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bear.customerview.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.bear.customerview.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/height_dp_10"
+        android:paddingLeft="@dimen/app_marign_space"
+        android:paddingRight="@dimen/app_marign_space"
+        android:paddingTop="@dimen/my_top_margin">
+        <com.bear.customerview.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/my_avator"
+                android:layout_width="@dimen/my_avator_width"
+                android:layout_height="@dimen/my_avator_width"
+                android:scaleType="fitXY"
+                android:src="@drawable/user_avator" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/height_dp_10"
+                android:layout_toRightOf="@id/my_avator"
+                android:lines="1"
+                android:text="wolf"
+                android:textColor="@color/white_color" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="已关注" />
+        </com.bear.customerview.autolayout.AutoRelativeLayout>
+        <com.bear.customerview.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/app_marign_space"
+            android:orientation="horizontal">
+            <com.bear.customerview.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/normal_text_style"
+                    android:text="6" />
+                <TextView
+                    style="@style/normal_text_style"
+                    android:text="@string/my_attention_text" />
+            </com.bear.customerview.autolayout.AutoLinearLayout>
+            <com.bear.customerview.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/normal_text_style"
+                    android:text="5" />
+                <TextView
+                    style="@style/normal_text_style"
+                    android:text="@string/my_fans_text" />
+            </com.bear.customerview.autolayout.AutoLinearLayout>
+            <com.bear.customerview.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/normal_text_style"
+                    android:text="193" />
+                <TextView
+                    style="@style/normal_text_style"
+                    android:text="@string/my_visitors_text" />
+            </com.bear.customerview.autolayout.AutoLinearLayout>
+        </com.bear.customerview.autolayout.AutoLinearLayout>
+    </com.bear.customerview.autolayout.AutoLinearLayout>
+    <com.bear.customerview.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/white_color">
+        <com.bear.customerview.widget.PagerSlidingTabStrip
+            android:id="@+id/user_pager_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/app_title_height"
+            app:pstsIndicatorHeight="@dimen/height_dp_3"
+            app:pstsIndicatorColor="@color/colorPrimary"
+            app:pstsDividerColor="@android:color/transparent"
+            app:selectedTabTextColor="@color/colorPrimary"
+            app:pstsUnderlineHeight="0dp" />
+    </com.bear.customerview.autolayout.AutoLinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/user_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20px"/>
+</com.bear.customerview.autolayout.AutoLinearLayout>

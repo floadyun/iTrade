@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/trade_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:background="@color/colorAccent"
+        android:title="最新资讯"
+        android:titleTextColor="@color/white_color"
+        android:navigationIcon="@drawable/title_back_selector"/>
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/trade_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/trade_recycler"
+                android:layout_width="@dimen/trade_left_width"
+                android:layout_height="match_parent"
+                android:background="@color/white_color"
+                android:layout_gravity="left"/>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

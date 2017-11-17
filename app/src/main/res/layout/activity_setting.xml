@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bear.customerview.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/app_backgroud_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.bear.customerview.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_setting_header"
+        style="@style/AccountDetailItemStyle"
+        android:layout_marginTop="30px"
+        android:layout_height="@dimen/setting_item_height">
+        <ImageView
+            android:id="@+id/iv_setting_head_img"
+            android:layout_width="132px"
+            android:layout_height="132px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@drawable/default_head_portrait" />
+        <ImageView
+            android:id="@+id/accout_detail_arrow_img0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_right_row" />
+        <TextView
+            android:layout_toRightOf="@id/iv_setting_head_img"
+            android:id="@+id/tv_setting_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30px"
+            android:layout_centerVertical="true"
+            android:text="floadyun"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/normal_text_color"
+            android:textSize="48px" />
+    </com.bear.customerview.autolayout.AutoRelativeLayout>
+    <View
+        style="@style/line_style"
+        android:paddingLeft="@dimen/margin_space"
+        android:paddingRight="@dimen/margin_space" />
+    <com.trade.widget.ArrowRowView
+        android:id="@+id/setting_change_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_item_height"
+        app:titleText="@string/setting_change_phone_text"
+        app:titleTextColor="@color/normal_text_color"
+        app:titleTextSize="14px" />
+    <View
+        style="@style/line_style"
+        android:paddingLeft="@dimen/margin_space"
+        android:paddingRight="@dimen/margin_space" />
+    <com.trade.widget.ArrowRowView
+        android:id="@+id/setting_bind_user"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_item_height"
+        app:titleText="@string/setting_bind_user_text"
+        app:titleTextColor="@color/normal_text_color"
+        app:titleTextSize="14px" />
+    <View
+        style="@style/line_style"/>
+    <com.bear.customerview.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_setting_cache"
+        style="@style/AccountDetailItemStyle">
+        <TextView
+            android:id="@+id/tv_setting_cache_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="清除缓存"
+            android:textColor="@color/normal_text_color"
+            android:textSize="48px" />
+        <ImageView
+            android:id="@+id/iv_setting_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_right_row" />
+        <TextView
+            android:layout_toLeftOf="@id/iv_setting_cache"
+            android:id="@+id/tv_setting_cache"
+            android:layout_marginRight="30px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="12M"
+            android:textColor="@color/edit_hint_text_color"
+            android:textSize="36px" />
+    </com.bear.customerview.autolayout.AutoRelativeLayout>
+    <View
+        style="@style/line_style"
+        android:paddingLeft="@dimen/margin_space"
+        android:paddingRight="@dimen/margin_space" />
+    <com.bear.customerview.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_setting_up_version"
+        style="@style/AccountDetailItemStyle">
+        <TextView
+            android:id="@+id/tv_setting_up_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="版本更新"
+            android:textColor="@color/normal_text_color"
+            android:textSize="48px" />
+        <ImageView
+            android:id="@+id/iv_setting_up_version_array"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_right_row" />
+        <TextView
+            android:layout_toLeftOf="@id/iv_setting_up_version_array"
+            android:id="@+id/tv_up_version"
+            android:layout_marginRight="30px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="V1.3.2"
+            android:textColor="@color/edit_hint_text_color"
+            android:textSize="36px" />
+    </com.bear.customerview.autolayout.AutoRelativeLayout>
+    <com.bear.customerview.carouseview.CarouseButton
+        android:id="@+id/btn_unlogin"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        app:normalSolid="@color/colorAccent"
+        app:pressedSolid="@color/colorPrimary"
+        app:roundButtonRadius = "@dimen/login_btn_radius"
+        android:text="@string/setting_exit_text"
+        android:onClick="onClick"
+        android:layout_marginTop="100px"
+        android:textColor="@color/white_color"
+        android:layout_marginLeft="@dimen/margin_space"
+        android:layout_marginRight="@dimen/margin_space"/>
+</com.bear.customerview.autolayout.AutoLinearLayout>

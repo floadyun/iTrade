@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">爱交易</string>
+    <string name="go_text">跳过</string>
+    <string name="take_capture_text">拍照</string>
+    <string name="select_album_text">从相册选择</string>
+    <string name="cancel_text">取消</string>
+    <!--登录 -->
+    <string name="login_acount_text">账 号</string>
+    <string name="login_acount_notify_text">请输入手机号</string>
+    <string name="login_password_text">密 码</string>
+    <string name="login_password_notify_text">请输入密码</string>
+    <string name="login_text">登录</string>
+    <string name="forget_password_text">忘记密码？</string>
+    <string name="login_free_registration_text">免费注册</string>
+
+    <!--手机号注册-->
+    <string name="phone_register_text">手机号注册</string>
+    <string name="register_phone_text">手机号：</string>
+    <string name="register_verification_code_text">获取验证码</string>
+    <string name="verification_code">验证码</string>
+    <string name="verification_login">验证并登录</string>
+    <string name="register_verify_text">验证</string>
+    <string name="verification_hint_code_text">请输入验证码</string>
+    <string name="verification_code_text">验证码：</string>
+    <string name="register_sure_password_text">确认密码</string>
+    <string name="register_immediately_text">立即注册</string>
+    <string name="input_password_again_text">再次输入密码</string>
+    <string name="register_notify_text">注册即表示您同意 </string>
+    <string name="register_user_protocol">《用户注册协议》</string>
+
+    <!--找回密码-->
+    <string name="find_password_text">找回密码</string>
+    <string name="set_password_text">修改密码</string>
+    <string name="input_password_text">新密码：</string>
+    <string name="sure_password_text">确认密码：</string>
+    <string name="register_input_password">请输入新密码</string>
+    <string name="register_input_password_again">请再次输入新密码</string>
+    <string name="register_password_notify_text">*密码长度8-16位，可使用字母、数字、符号组成，区分大小写。</string>
+    <string name="sure_text">确定</string>
+
+    <!--发现-->
+    <string name="plan_title_text">交易计划</string>
+    <string name="xauusd_text">xauusd</string>
+    <string name="eurusd_text">eurusd</string>
+    <string name="gpbusd_text">gbpusd</string>
+    <string name="audusd_text">audusd</string>
+    <string name="usdcad_text">usdcad</string>
+    <string name="usdjpy_text">usdjpy</string>
+    <string name="plan_create_time_text">创建时间：</string>
+    <string name="item_plan_attention_text">关注</string>
+
+    <!--计划详情-->
+    <string name="plan_detail_text">计划详情</string>
+
+    <!--关注-->
+    <string name="attention_title_text">我关注的</string>
+    <string name="friend_action_msg">交易圈</string>
+    <string name="attention_delete_text">删除</string>
+    <string name="attention_text">wolf的个人中心</string>
+
+    <!--交易圈-->
+    <string name="trade_circle_text">交易圈</string>
+
+    <!--创建交易计划-->
+    <string name="create_new_plane_text">创建计划</string>
+    <string name="publish_plane_text">发布</string>
+    <string name="plane_name_text">计划名称</string>
+    <string name="plane_content_text">计划内容</string>
+    <string name="plane_reason_text">交易理由</string>
+    <string name="publish_text">公开</string>
+    <string name="attention_visible_text">关注可见</string>
+    <string name="self_visible_text">本人可见</string>
+
+    <!--交易品种列表-->
+    <string name="currency_title_text">外汇</string>
+    
+    <!--我的-->
+    <string name="my_active_text">动态</string>
+    <string name="my_attention_text">关注</string>
+    <string name="my_fans_text">粉丝</string>
+    <string name="my_visitors_text">访客</string>
+
+    <string name="my_plan_text">我的计划</string>
+    <string name="my_favorite_text">我的收藏</string>
+    <string name="my_message_text">我的消息</string>
+
+    <string name="my_fast_open">极速开户</string>
+    <string name="my_one_money">一元夺宝</string>
+    <string name="my_easy_time">轻松一刻</string>
+    <string name="my_daytime_model">日间模式</string>
+    <string name="my_night_model">夜间模式</string>
+    <string name="my_share_text">分享给好友</string>
+    <string name="my_suggest">意见反馈</string>
+    <string name="my_system_setting">系统设置</string>
+    <string name="my_about_text">关于简汇</string>
+
+    <!--设置-->
+    <string name="setting_title_text">设置</string>
+    <string name="setting_change_user_name">修改资料</string>
+    <string name="setting_change_phone_text">修改密码</string>
+    <string name="setting_bind_user_text">用户绑定</string>
+
+    <string name="setting_feedback_text">意见与反馈</string>
+    <string name="setting_clear_cache_text">清除缓存</string>
+    <string name="setting_about_text">关于简汇</string>
+    <string name="setting_exit_text">退出当前账号</string>
+
+    <!--账户详情-->
+    <string name="account_detail_title_text">账户详情</string>
+
+    <!--修改资料-->
+    <string name="change_avator_text">修改头像</string>
+    <string name="change_nick_name">昵称</string>
+    <string name="change_address_text">所在地</string>
+    <string name="change_sex_text">性别</string>
+    <string name="change_signature_text">签名</string>
+
+    <!--修改昵称-->
+    <string name="edit_nick_name_activity_title">昵称</string>
+    <string name="et_edit_nickname_hint">请输入昵称</string>
+    <string name="edit_nickname_hint">可设置和修改你的昵称</string>
+</resources>

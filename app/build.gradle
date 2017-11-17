@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.trade"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/rxjava.properties'
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+    dependencies {
+        compile fileTree(include: ['*.jar'], dir: 'libs')
+        androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+            exclude group: 'com.android.support', module: 'support-annotations'
+        })
+        compile 'com.ashokvarma.android:bottom-navigation-bar:1.4.1'
+        compile 'com.jakewharton:butterknife:8.5.1'
+        annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+        compile 'me.yokeyword:fragmentation:0.10.1'
+        compile 'com.getbase:floatingactionbutton:1.10.1'
+        compile 'com.yanzhenjie:recyclerview-swipe:1.0.4'
+        //分包
+        compile 'com.android.support:multidex:1.0.1'
+        compile project(':umenglib')
+        compile project(':medialib')
+}

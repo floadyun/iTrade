@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bear.customerview.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/app_backgroud_color"
+    android:layout_height="match_parent">
+
+    <View style="@style/line_style"
+        android:layout_marginTop="@dimen/normal_top_margin"></View>
+
+    <com.bear.customerview.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/normal_left_margin"
+        android:paddingRight="@dimen/normal_right_margin"
+        android:layout_height="@dimen/normal_item_height">
+        <TextView
+            android:id="@+id/tv_edit_nickname"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="48px"
+            android:text="@string/edit_nick_name_activity_title"/>
+        <com.bear.customerview.widget.ClearEditText
+            android:layout_toRightOf="@id/tv_edit_nickname"
+            android:id="@+id/et_edit_nickname"
+            style="@style/nomrmal_edit_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="30px"
+            android:hint="@string/et_edit_nickname_hint"
+            android:textSize="42px" />
+    </com.bear.customerview.autolayout.AutoRelativeLayout>
+    <View style="@style/line_style"></View>
+    <TextView
+        android:id="@+id/tv_edit_nickname_hint"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/edit_hint_text_color"
+        android:layout_margin="@dimen/app_marign_space"
+        android:textSize="40px"
+        android:text="@string/edit_nickname_hint"/>
+</com.bear.customerview.autolayout.AutoLinearLayout>

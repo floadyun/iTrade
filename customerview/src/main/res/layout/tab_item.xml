@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bear.customerview.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+    <com.bear.customerview.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="154px"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical">
+        <ImageView
+            android:id="@+id/tab_item_iv"
+            android:layout_width="66px"
+            android:layout_height="66px"
+            android:layout_gravity="center"
+            android:src="@drawable/load_01"
+            android:layout_marginTop="20px"/>
+        <TextView
+            android:id="@+id/tab_item_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="36px"
+            android:layout_marginTop="10px"
+            android:text="活动大厅"/>
+    </com.bear.customerview.autolayout.AutoLinearLayout>
+</com.bear.customerview.autolayout.AutoLinearLayout>

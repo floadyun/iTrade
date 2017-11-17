@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1A81D1</color>
+    <color name="colorPrimaryDark">#13609C</color>
+    <color name="colorAccent">#007AFF</color>
+    <color name="normal_back_text_color">#333333</color>
+    <color name="normal_text_color">#666666</color>
+    <!--列表线条颜色-->
+    <color name="list_line_color">#AFBBBB</color>
+
+    <color name="app_backgroud_color">#F0F1F5</color>
+    <color name="white_color">#ffffff</color>
+    <color name="item_light_color">#FEFEFE</color>
+    <color name="back_color">#000000</color>
+    <color name="edit_hint_text_color">#999999</color>
+    <color name="sell_text_color">#F84444</color>
+    <color name="buy_text_color">#007AFF</color>
+    <!--默认编辑颜色-->
+    <color name="gray_text_color">#999999</color>
+
+    <color name="button_fouces_gray">#f6f6f6</color>
+    <color name="button_bg_gray">#dddcdc</color>//按钮背景灰色
+
+    <!--按钮正常状态背景填充颜色-->
+    <color name="button_normal_solid_color">#ee356a</color>
+    <!--按钮按下状态背景填充颜色-->
+    <color name="button_pressed_solid_color">#dd3263</color>
+
+    <color name="noraml_gray_color">#B2B2B2</color>
+    <color name="line_view_color">#F9F9F9</color>
+
+    <color name="register_text_color">#4460E4</color>
+    <color name="edit_text_hint_color">#3B6FAC</color>
+    <color name="verification_text_color">#FEFEFF</color>
+</resources>

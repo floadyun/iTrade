@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bear.customerview.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_backgroud_color">
+    <com.bear.customerview.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.bear.customerview.carouseview.CarouseButton
+            android:id="@+id/take_picture_btn"
+            android:layout_width="match_parent"
+            android:layout_height="180px"
+            android:gravity="center"
+            android:text="@string/take_capture_text"
+            android:textColor="@color/normal_back_text_color"
+            android:textSize="60px"
+            app:normalSolid="@color/white"
+            app:pressedSolid="@color/grey"
+            app:roundButtonRadius="0px" />
+        <!--线条-->
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:background="@color/line_color"></View>
+        <com.bear.customerview.carouseview.CarouseButton
+            android:id="@+id/select_album_button"
+            android:layout_width="match_parent"
+            android:layout_height="180px"
+            android:gravity="center"
+            android:text="@string/select_album_text"
+            android:textColor="@color/normal_back_text_color"
+            android:textSize="60px"
+            app:normalSolid="@color/white"
+            app:pressedSolid="@color/grey"
+            app:roundButtonRadius="0px" />
+        <!--线条-->
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:background="@color/line_color"></View>
+        <com.bear.customerview.carouseview.CarouseButton
+            android:id="@+id/cancel_button"
+            android:layout_width="match_parent"
+            android:layout_height="180px"
+            android:layout_marginTop="30px"
+            android:gravity="center"
+            android:text="@string/cancel_text"
+            android:textColor="@color/normal_back_text_color"
+            android:textSize="60px"
+            app:normalSolid="@color/white"
+            app:pressedSolid="@color/grey"
+            app:roundButtonRadius="0px" />
+    </com.bear.customerview.autolayout.AutoLinearLayout>
+</com.bear.customerview.autolayout.AutoRelativeLayout>

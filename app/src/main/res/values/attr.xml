@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ArrowView">
+        <attr name="titleText" format="string" />
+        <attr name="titleTextSize" format="dimension"></attr>
+        <attr name="titleTextColor" format="color"></attr>
+        <attr name="subTitleText" format="string" />
+        <attr name="subTextSize" format="dimension"></attr>
+        <attr name="subTextColor" format="color"></attr>
+
+        <attr name="arrowSrc" format="reference" />
+        <attr name="indicatorShow" format="boolean" />
+        <attr name="lineShow" format="boolean" />
+    </declare-styleable>
+</resources>
