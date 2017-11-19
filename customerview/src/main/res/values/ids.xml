@@ -7,5 +7,6 @@
     <item name="id_tag_autolayout_margin" type="id"></item>
     <item type="id" name="scrollview"/>
     <!--refreshlayout-->
-
+    <!--banner-->
+    <item name="banner_indicatorId" type="id" />
 </resources>
