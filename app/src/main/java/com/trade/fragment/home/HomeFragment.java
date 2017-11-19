@@ -47,7 +47,7 @@ public class HomeFragment extends BaseFragment{
         mDatas.add(new TestEntitiy(3));
 
         homeAdapter = new HomeMutipleAdapter(mDatas);
-        
+
         home_recycler.setLayoutManager(new LinearLayoutManager(getContext()));
         home_recycler.setAdapter(homeAdapter);
     }
