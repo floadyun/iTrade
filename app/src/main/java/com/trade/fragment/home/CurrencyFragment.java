@@ -43,7 +43,6 @@ public class CurrencyFragment extends BaseFragment {
 
     @Override
     protected void initFragemntView() {
-        super.initFragemntView();
         setFragmentView(R.layout.fragment_currency);
 
         initRefreshLayout();

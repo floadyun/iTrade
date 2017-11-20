@@ -7,4 +7,8 @@ import com.trade.fragment.BaseFragment;
  */
 
 public class MyShareFragment extends BaseFragment {
+    @Override
+    protected void initFragemntView() {
+
+    }
 }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.bear.customerview.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <View
+            android:id="@+id/message_view"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_message"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"/>
+        <android.support.v7.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/message_view"
+            android:layout_centerVertical="true"
+            app:queryHint="搜索系列课/直播间"
+            android:background="@color/noraml_gray_color">
+        </android.support.v7.widget.SearchView>
+    </com.bear.customerview.autolayout.AutoRelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

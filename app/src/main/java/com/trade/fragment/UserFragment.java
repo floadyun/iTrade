@@ -51,7 +51,7 @@ public class UserFragment extends BaseFragment implements UMShareListener{
     private void setUserInfo(){
 //        user = User.getCurrentUser(User.class);
         if(null!=user){
-            GlideApp.getInstance().withGlideRoundTransform(getContext(),R.drawable.default_head_portrait,user.getAvatorurl(),avatorImage);
+            GlideApp.getInstance().withGlideCircleTransform(getContext(),R.drawable.default_head_portrait,user.getAvatorurl(),avatorImage);
             nickname_text.setText(user.getNickname());
         }
     }

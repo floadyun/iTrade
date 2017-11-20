@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
     useLibrary 'org.apache.http.legacy'
     defaultConfig {
         applicationId "com.trade"
         minSdkVersion 15
-        targetSdkVersion 25
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -42,6 +42,11 @@ android {
         compile 'me.yokeyword:fragmentation:0.10.1'
         compile 'com.getbase:floatingactionbutton:1.10.1'
         compile 'com.yanzhenjie:recyclerview-swipe:1.0.4'
+        //轮播图
+        compile 'com.squareup.picasso:picasso:2.3.2'
+        compile 'com.nineoldandroids:library:2.4.0'
+        compile 'com.daimajia.slider:library:1.1.5@aar'
+        compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
         //分包
         compile 'com.android.support:multidex:1.0.1'
         compile project(':umenglib')

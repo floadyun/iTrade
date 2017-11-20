@@ -9,6 +9,5 @@ import com.trade.fragment.BaseFragment;
 public class VRVideoFragment extends BaseFragment {
     @Override
     protected void initFragemntView() {
-        super.initFragemntView();
     }
 }

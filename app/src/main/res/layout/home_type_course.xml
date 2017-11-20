@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white_color">
+    <TextView
+        style="@style/normal_black_text_style"
+        android:text="大咖精品课"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"/>
+    <TextView
+        style="@style/normal_black_text_style"
+        android:drawableRight="@drawable/ic_right_row"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:text="更多"
+        android:drawablePadding="5dp"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

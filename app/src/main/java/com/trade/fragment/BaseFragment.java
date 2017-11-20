@@ -17,7 +17,7 @@ import butterknife.ButterKnife;
  * Created by yixiaofei on 2017/2/25 0025.
  */
 
-public class BaseFragment extends Fragment {
+public abstract class BaseFragment extends Fragment {
 
     protected View baseView;
 
@@ -32,9 +32,8 @@ public class BaseFragment extends Fragment {
         }
         return baseView;
     }
-    protected  void initFragemntView(){
+    protected abstract void initFragemntView();
 
-    }
     protected  void setFragmentView(int layoutId){
         baseView = layoutInflater.inflate(layoutId,null);
         ButterKnife.bind(this,baseView);

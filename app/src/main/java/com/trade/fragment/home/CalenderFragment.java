@@ -21,7 +21,6 @@ public class CalenderFragment extends BaseFragment {
 
     @Override
     protected void initFragemntView() {
-        super.initFragemntView();
         setFragmentView(R.layout.fragment_calender_layout);
 
         calenderView.setWebChromeClient(new WebChromeClient());

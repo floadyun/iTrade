@@ -28,8 +28,6 @@ public class ShareFragment extends BaseFragment {
 
     @Override
     protected void initFragemntView() {
-        super.initFragemntView();
-
         setFragmentView(R.layout.fragment_share_layout);
 
         initRecyclerView();
